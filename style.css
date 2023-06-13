@@ -84,6 +84,6 @@ button {
 }
 
 button:hover {
-    background-image: linear-gradient(to right, var(--tomato), orange);
+    background-image: linear-gradient(to right, var(--tomato), rgb(243, 100, 12));
     box-shadow: 5px 0px 20px var(--tomato);
 }
