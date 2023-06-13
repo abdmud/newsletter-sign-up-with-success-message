@@ -11,10 +11,10 @@ function emailChecker() {
     const emailText = document.querySelector(".form-label")
     const emailDiv = document.querySelector("#email")
     if (eMail != "" && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(eMail)) {
-        
+
         successWindow.classList.remove("hidden")
         formWindow.classList.add("hidden")
-
+        
         return true
     } else {
         // Change field border color and background

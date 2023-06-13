@@ -32,7 +32,6 @@ h1 {
     padding: 3% 4%;
     gap: 4%;
     width: max-content;
-    border: solid 2px blue;
     background-color: var(--white);
     border-radius: 20px;
 }
@@ -41,7 +40,6 @@ h1 {
     display: none;
 }
 .success-card {
-    border: solid 2px blue;
     background-color: var(--white);
     border-radius: 20px;
     padding: 3% 4%;
@@ -117,6 +115,6 @@ button {
 }
 
 button:hover {
-    background-image: linear-gradient(to right, var(--tomato), rgb(243, 100, 12));
-    box-shadow: 5px 0px 20px var(--tomato);
+    background-image: linear-gradient(to right, var(--tomato), orange);
+    box-shadow: 5px 0px 15px var(--tomato);
 }
