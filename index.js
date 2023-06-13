@@ -6,7 +6,6 @@ const dismissBtn = document.querySelector(".success-btn")
 
 
 function emailChecker() {
-
     var eMail = emailInput.value
     const emailText = document.querySelector(".form-label")
     const emailDiv = document.querySelector("#email")
@@ -33,6 +32,11 @@ function emailChecker() {
         validationMsg.style.fontWeight = "bold"
 
         return false
+    }
+}
+
+function mobileChecker() {
+    if(window.innerWidth < 851) {
     }
 }
 

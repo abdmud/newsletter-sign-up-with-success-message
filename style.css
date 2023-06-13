@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    width: auto;
 }
 
 h1 {
@@ -117,4 +118,56 @@ button {
 button:hover {
     background-image: linear-gradient(to right, var(--tomato), orange);
     box-shadow: 5px 0px 15px var(--tomato);
+}
+
+/**** MOBILE ***/
+@media only screen and (max-width: 850px) {
+    body {
+        margin-top: 5%;
+    }
+    .form-card {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+    #desktopImage {
+        display: none;
+    }
+    .form-right {
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        background-size: 100% 151%;
+        height: 200px;
+        width: 100%;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-size: cover;
+    }
+    .form-left {
+        padding: 5% 4%;
+        width: fit-content;
+    }
+    .input-btn {
+        width: 100%;
+    }
+    input {
+        margin-bottom: 3%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .success-card {
+        height: 600px;
+        margin: 0;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .hidden {
+        display: none;
+    }
+    .success-card h1 {
+        font-size: 46px;
+    }
 }
