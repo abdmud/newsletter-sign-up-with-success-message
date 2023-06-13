@@ -1,5 +1,8 @@
 const emailInput = document.querySelector("input")
 const submitBtn = document.querySelector(".submit-btn")
+const successWindow = document.querySelector(".success-card")
+const formWindow = document.querySelector(".form-card")
+const dismissBtn = document.querySelector(".success-btn")
 
 
 function emailChecker() {
@@ -8,7 +11,10 @@ function emailChecker() {
     const emailText = document.querySelector(".form-label")
     const emailDiv = document.querySelector("#email")
     if (eMail != "" && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(eMail)) {
-        console.log("success")
+        
+        successWindow.classList.remove("hidden")
+        formWindow.classList.add("hidden")
+
         return true
     } else {
         // Change field border color and background
@@ -30,7 +36,11 @@ function emailChecker() {
     }
 }
 
-
 submitBtn.addEventListener("click", () => {
     emailChecker()
+})
+
+dismissBtn.addEventListener("click", () => {
+    successWindow.classList.add("hidden")
+    formWindow.classList.remove("hidden")
 })
