@@ -66,6 +66,7 @@ li {
     flex-direction: column;
     justify-content: space-between;
     height: 20%;
+    margin-top: -3%;
 }
 
 input, button {
